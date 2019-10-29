@@ -7,6 +7,6 @@
 - vào thư mục ccd, gõ <b>make</b> để biên dịch và bắt đầu cài đặt
 
 <h1>HOOK</h1>
-- Vào thư mục hook, gõ lệnh <b>sudo cat /boot/System.map-$(uname -r) | grep sys_call_table  > sys_call_table_address.txt</b> để lấy địa chỉ của sys_call_table
-- Thay thế địa chỉ của sys_call_table tại macro <b>SYS_CALL_TABLE_ADDRESS</b> trong file <b>hook.c</b>
-- gõ <b>make</b> để biên dịch và bắt đầu cài đặt hook
+<p>- Vào thư mục hook, gõ lệnh <b>sudo cat /boot/System.map-$(uname -r) | grep sys_call_table  > sys_call_table_address.txt</b> để lấy địa chỉ của sys_call_table</p>
+<p>- Thay thế địa chỉ của sys_call_table tại macro <b>SYS_CALL_TABLE_ADDRESS</b> trong file <b>hook.c</b></p>
+<p>- gõ <b>make</b> để biên dịch và bắt đầu cài đặt hook</p>
