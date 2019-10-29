@@ -1,0 +1,1 @@
+cmd_/home/oem/projects/Kernel/cdd/character_device.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/oem/projects/Kernel/cdd/character_device.ko /home/oem/projects/Kernel/cdd/character_device.o /home/oem/projects/Kernel/cdd/character_device.mod.o ;  true

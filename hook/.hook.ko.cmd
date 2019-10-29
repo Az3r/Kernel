@@ -1,0 +1,1 @@
+cmd_/home/oem/projects/Kernel/hook/hook.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/oem/projects/Kernel/hook/hook.ko /home/oem/projects/Kernel/hook/hook.o /home/oem/projects/Kernel/hook/hook.mod.o ;  true
