@@ -122,9 +122,9 @@ static int generate(void)
     return nGeneratedNumber;
 }
 
-MODULE_LICENSE("GPL");                                                                                      ///< The license type -- this affects available functionality
-MODULE_AUTHOR("Az3r");                                                                                      ///< The author -- visible when you use modinfo
-MODULE_DESCRIPTION("A simple Linux char driver that generates random number for read and open operations"); ///< The description -- see modinfo
+MODULE_LICENSE("GPL");                                                                                                  ///< The license type -- this affects available functionality
+MODULE_AUTHOR("Az3r");                                                                                                  ///< The author -- visible when you use modinfo
+MODULE_DESCRIPTION("A simple Linux character device driver that generates random number for read and open operations"); ///< The description -- see modinfo
 MODULE_VERSION("0.1");
 module_init(my_init);
 module_exit(my_exit);
