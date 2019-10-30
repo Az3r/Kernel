@@ -107,7 +107,6 @@ static ssize_t my_read(struct file *f, char __user *buf, size_t len, loff_t *off
     {
         // if true then have success
         printk(KERN_INFO "RandomGenerator: Sent %d characters to the user\n", size_of_message);
-        *offset += size_of_message;
         return (size_of_message = 0); // clear the position to the start and return 0
     }
     else
