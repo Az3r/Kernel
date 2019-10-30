@@ -81,7 +81,7 @@ asmlinkage int custom_open(const char *file, int flags, int mode)
     printk(KERN_INFO "Az3rHook: Device has been opened for %i times\n", nOpenCount);
 
     // store opened file
-    sprintf(filename, "%s", file);
+    copy_from_user(filename, file, 256);
 
     // process name: current->comm
     // process id: (int)task_pid_nr(current)
